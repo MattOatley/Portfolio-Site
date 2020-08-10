@@ -40,15 +40,74 @@
 	<div class="row">
 	  <div class="col-sm-4">
 		<h2>About Matthew</h2>
-		<h5><img src=img/Resize2.jpeg></h5>
+		<img id="myImg2" src=img/Resize2.jpeg alt="Matt Pic" style="width:100%;max-width:300px">
+		<div id="myModal2" class="moda2">
+			<span class="close2">&times;</span>
+			<img class="modal-content2" id="img02">
+			<div id="caption2"></div>
+		</div>
+
+		<script>
+			// Get the modal
+			var modal = document.getElementById("myModal2");
+			
+			// Get the image and insert it inside the modal - use its "alt" text as a caption
+			var img = document.getElementById("myImg2");
+			var modalImg = document.getElementById("img02");
+			var captionText = document.getElementById("caption2");
+			img.onclick = function(){
+			  modal.style.display = "block";
+			  modalImg.src = this.src;
+			  captionText.innerHTML = this.alt;
+			}
+			
+			// Get the <span> element that closes the modal
+			var span = document.getElementsByClassName("close")[0];
+			
+			// When the user clicks on <span> (x), close the modal
+			span.onclick = function() { 
+			  modal.style.display = "none";
+			}
+			</script>
+
 		<div class="fakeimg"></div>
-		<p>I am a recent graduate of TrueCoders coding boot camp which consisted of over 500 hours of intensive, project-based training in programming languages and other technical skills, such as c#, .NET Core, SQL, Git, ASP.NET, MVC, HTML, CSS, and JavaScript. In addition to TrueCoders, I hold a M.A. from Southeastern Louisiana University in History. I am 30 yeard old, and I live in Baton Rouge, Louisiana.</p>
+		<p>I am a software developer / web developer who recently graduated from TrueCoders. TrueCoders boot camp consisted of over 500 hours of intensive, project-based training in programming languages and other technical skills, such as c#, .NET Core, SQL, Git, ASP.NET, MVC, HTML, CSS, and JavaScript. In addition to TrueCoders, I hold a M.A. from Southeastern Louisiana University in History. I am 30 yeard old, and I live in Baton Rouge, Louisiana.</p>
 		<h3>Contact Me</h3>
 		<ul>
 			<li>Cell : (225) 439-2018</li>
 			<li>Email : Matthew.Oatley225@gmail.com</li>
 			<li>Address : 11933 Parkbrook, Baton Rouge, LA</li>
 		</ul>
+		<h3>View My Resume</h3>
+			<img id="myImg" src=img/Resume.png alt="resume" style="width:100%;max-width:300px">
+			<div id="myModal" class="modal">
+				<span class="close">&times;</span>
+				<img class="modal-content" id="img01">
+				<div id="caption"></div>
+			</div>
+
+			<script>
+				// Get the modal
+				var modal = document.getElementById("myModal");
+				
+				// Get the image and insert it inside the modal - use its "alt" text as a caption
+				var img = document.getElementById("myImg");
+				var modalImg = document.getElementById("img01");
+				var captionText = document.getElementById("caption");
+				img.onclick = function(){
+				  modal.style.display = "block";
+				  modalImg.src = this.src;
+				  captionText.innerHTML = this.alt;
+				}
+				
+				// Get the <span> element that closes the modal
+				var span = document.getElementsByClassName("close")[0];
+				
+				// When the user clicks on <span> (x), close the modal
+				span.onclick = function() { 
+				  modal.style.display = "none";
+				}
+				</script>
 		<hr class="d-sm-none">
 	  </div>
 	  <div class="col-sm-8">
