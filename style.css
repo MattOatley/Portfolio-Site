@@ -48,6 +48,19 @@ body{
   padding: 5px;
   border: 1px solid black;
 }
+
+* {
+  box-sizing: border-box;
+}
+
+/* Create two equal columns that floats next to each other */
+.column4 {
+  float: left;
+  width: 100%;
+  padding: 10px;
+  height: 800px; /* Should be removed. Only for demonstration */
+}
+
 #myImg2{
   border-radius: 5px;
   cursor: pointer;
@@ -128,9 +141,10 @@ body{
 }
 
 .fakeimg{
-  
+  position: absolute;
+  top: 500px;
+  left: 300px;
 }
-
 
 #myImg{
   border-radius: 5px;
@@ -232,6 +246,7 @@ body{
   width: 48.9%;
   height: 350px;
   text-align: center;
+  padding : 5px;
   border: 1px solid black;
 }
 
@@ -261,6 +276,32 @@ body{
   margin: 5px;
   padding: 5px;
 }
+.column3{
+  float: left;
+  bottom: 600px;
+  left: 100px;
+  width: 100%;
+  padding: 10px;
+  height: 700px;
+  column-gap: 10px;
+  border: 1px solid black;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+  height: 100px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row5:after {
+  content: "";
+  display: table;
+  clear: both;
+  background-color: black;
+  height: 100px;
+}
 
 
 
@@ -282,7 +323,7 @@ body{
   height: 250px;
   text-align: center;
   padding: 5px;
-  border: 1px solid black;
+  
 }
 
 /* Middle column */
@@ -290,7 +331,7 @@ body{
   width: 48.9%;
   height: 250px;
   text-align: center;
-  border: 1px solid black;
+  
 }
 
 /* Clear floats after the columns */
@@ -298,6 +339,7 @@ body{
   content: "";
   display: table;
   clear: both;
+  padding: 5px;
 }
 
 figure {
@@ -321,6 +363,8 @@ figure {
   width: 300px;
   height: 650px;
   border: 1px solid black;
+  float: left;
+  padding: 10px;
   margin: 1;
 }
 .contact-info{
@@ -330,7 +374,21 @@ figure {
   width: 300px;
   height: 200px;
   border: 1px solid black;
+  float: left;
+  width: 100%;
+  padding: 10px;
 }
+section{
+  background-color: black;
+}
+.column6{
+  float: left;
+  width: 100%;
+  padding: 10px;
+  height: 400px;
+}
+
+
 #fixed {
   background-image: url('img/mac.png');
   position: fixed;

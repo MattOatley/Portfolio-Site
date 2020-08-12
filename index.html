@@ -10,11 +10,15 @@
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 	<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
 	<link href="style.css" rel="stylesheet">
+	 <link rel="stylesheet" href="css/default.css">
+	<link rel="stylesheet" href="css/layout.css">
+   <link rel="stylesheet" href="css/media-queries.css">
+   <link rel="stylesheet" href="css/magnific-popup.css">
 </head>
 <body>
 
 <!-- Navigation -->
-<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark" data-spy="affix" data-offset-top="197">
 	<!-- Brand/logo -->
 	<a class="navbar-brand" href="#">Matthews Portfolio</a>
 	
@@ -31,22 +35,16 @@
 	  </li>
 	</ul>
   </nav>
-  
-			
-
-<!--- About Me -->
 
 <div class="container" style="margin-top:30px">
 	<div class="row">
-	  <div class="col-sm-4">
-		<h2>About Matthew</h2>
+		<div class="col-sm-4">
 		<img id="myImg2" src=img/Resize2.jpeg alt="Matt Pic" style="width:100%;max-width:300px">
 		<div id="myModal2" class="moda2">
 			<span class="close2">&times;</span>
 			<img class="modal-content2" id="img02">
 			<div id="caption2"></div>
 		</div>
-
 		<script>
 			// Get the modal
 			var modal = document.getElementById("myModal2");
@@ -69,15 +67,6 @@
 			  modal.style.display = "none";
 			}
 			</script>
-
-		<div class="fakeimg"></div>
-		<p>I am a software developer / web developer who recently graduated from TrueCoders. TrueCoders boot camp consisted of over 500 hours of intensive, project-based training in programming languages and other technical skills, such as c#, .NET Core, SQL, Git, ASP.NET, MVC, HTML, CSS, and JavaScript. In addition to TrueCoders, I hold a M.A. from Southeastern Louisiana University in History. I am 30 yeard old, and I live in Baton Rouge, Louisiana.</p>
-		<h3>Contact Me</h3>
-		<ul>
-			<li>Cell : (225) 439-2018</li>
-			<li>Email : Matthew.Oatley225@gmail.com</li>
-			<li>Address : 11933 Parkbrook, Baton Rouge, LA</li>
-		</ul>
 		<h3>View My Resume</h3>
 			<img id="myImg" src=img/Resume.png alt="resume" style="width:100%;max-width:300px">
 			<div id="myModal" class="modal">
@@ -111,7 +100,55 @@
 		<hr class="d-sm-none">
 	  </div>
 	  <div class="col-sm-8">
-		<h2><strong>Projects</strong></h2>
+
+	<h2><strong>About Me</strong></h2>
+	<p>I am a software developer / web developer who recently graduated from TrueCoders. TrueCoders boot camp consisted of over 500 hours of intensive, project-based training in programming languages and other technical skills, such as c#, .NET Core, SQL, Git, ASP.NET, MVC, HTML, CSS, and JavaScript. In addition to TrueCoders, I hold a M.A. from Southeastern Louisiana University in History. I am 30 yeard old, and I live in Baton Rouge, Louisiana.</p>	
+	<h3>Contact Me</h3>
+		<ul>
+			<li>Cell : (225) 439-2018</li>
+			<li>Email : Matthew.Oatley225@gmail.com</li>
+			<li>Address : 11933 Parkbrook, Baton Rouge, LA</li>
+		</ul>
+	  </div>
+	</div>
+  </div>
+
+
+
+
+
+<!--About Me-->
+<h2><b>Professional Info</b></h2>
+<div class="column3">
+  <div class="column3">
+	<p>I am a new developer/programmer who is proficient in C#, HTML, and SQL in .NET Framework. I am looking to begin a new career in the software industry. I have just graduated from TrueCoders coding boot camp which consisted of over 500 hours of intensive, project-based training in programming languages and other technical skills, such as C#, .NET Core, SQL, Git, ASP.NET MVC, HTML, CSS, and JavaScript. In addition to TrueCoders, I hold a M.A. from Southeastern Louisiana State University in history. During my time at Southeastern I developed strong critical thinking and researching skills that will help me overcome any obstacle I may encounter.</p>
+	<h3><strong>Work Experience</strong></h3>
+	<p><b>Compass Group - LSU Campus - Driver (2019 - Present)</b></p>
+	<ul>
+		<li>Deliver items to various businesses on campus and across city</li>
+		<li>Interact with customers and associates to assure excellent customer service</li>
+		<li>Assist management in receiving and storing merchandise​</li>
+	</ul>
+	<p><b>Tulane University - Business Writing Center - Writing Instructor (2017 - 2018)</b></p>
+	<ul>
+		<li>Leverage top-notch interpersonal communication skills to help business students with their writing abilities</li>
+		<li>Develop engaging teaching methods for reaching students and helping them understand different concepts</li>
+		<li>Grade students papers and give them points based on organization, grammar, and punctuation</li>
+	</ul>
+	<p><b>Gulf Coast Carriers - A Quality Carriers Affiliate - Shop Administrator/Foreman (2016 - 2017)</b></p>
+	<ul>
+		<li>Verified that inventory levels were correct and also managed parts/prepared weekly budgets</li>
+		<li>Presented budgets to owners on a weekly basis and scheduled regular fleet maintenance</li>
+		<li>Handled billing for parts and labor while also administering the scheduling for an eight-member staff</li>
+	</ul>
+  </div> 
+</div>
+ 
+
+<!--- Projects -->
+<h2><b>My Projects</b></h2>
+<div class="column4">
+  <div class="column4">
 	<p><b>CRUD Database Website: C# | ASP.NET Core MVC | SQL | HTML | CSS | JavaScript</b></p>
 	<ul>
 		<li>The app takes advantage of dependency injection by using an IoC container to handle the newing up of objects</li>
@@ -139,47 +176,17 @@
 		<li>The application makes a call to the Ron Swanson API and parses the JSON Array into a string called swansonQuote</li>
 		<li>The program will “chat” using a loop to simulate the two talking back and forth until the loop finishes execution</li>
 	</ul>
-	<h2><strong>Professional Info</strong></h2>
-	<p>I am a new developer/programmer who is proficient in C#, HTML, and SQL in .NET Framework. I am looking to begin a new career in the software industry. I have just graduated from TrueCoders coding boot camp which consisted of over 500 hours of intensive, project-based training in programming languages and other technical skills, such as C#, .NET Core, SQL, Git, ASP.NET MVC, HTML, CSS, and JavaScript. In addition to TrueCoders, I hold a M.A. from Southeastern Louisiana State University in history. During my time at Southeastern I developed strong critical thinking and researching skills that will help me overcome any obstacle I may encounter.</p>
-	<h3><strong>Work Experience</strong></h3>
-	<p><b>Compass Group - LSU Campus - Driver (2019 - Present)</b></p>
-	<ul>
-		<li>Deliver items to various businesses on campus and across city</li>
-		<li>Interact with customers and associates to assure excellent customer service</li>
-		<li>Assist management in receiving and storing merchandise​</li>
-	</ul>
-	<p><b>Tulane University - Business Writing Center - Writing Instructor (2017 - 2018)</b></p>
-	<ul>
-		<li>Leverage top-notch interpersonal communication skills to help business students with their writing abilities</li>
-		<li>Develop engaging teaching methods for reaching students and helping them understand different concepts</li>
-		<li>Grade students papers and give them points based on organization, grammar, and punctuation</li>
-	</ul>
-	<p><b>Gulf Coast Carriers - A Quality Carriers Affiliate - Shop Administrator/Foreman (2016 - 2017)</b></p>
-	<ul>
-		<li>Verified that inventory levels were correct and also managed parts/prepared weekly budgets</li>
-		<li>Presented budgets to owners on a weekly basis and scheduled regular fleet maintenance</li>
-		<li>Handled billing for parts and labor while also administering the scheduling for an eight-member staff</li>
-	</ul>
-
-	  </div>
-	</div>
   </div>
 
-
-</div>
-<div class="row2">
-	<div class="column side2" style="background-color:#aaa;"><h3>Recommendation:</h3><p><i>"He willingly extended his schedule to accommodate co-workers and was always ready to lend a hand during busy times."</i></p><p>- Cynthia Fransen, Senior Program Coordinator, Tulane University, Business Writing Center</p> 
+  <!--Quote Section-->
+<div class="row5">
+	<div class="column"><h3>Recommendation:</h3><p><i>"He willingly extended his schedule to accommodate co-workers and was always ready to lend a hand during busy times."</i></p><p>- Cynthia Fransen, Senior Program Coordinator, Tulane University, Business Writing Center</p> 
 	</div>
-	<div class="column middle2" style="background-color:#bbb;"><h3>Favorite Quote:</h3><p><i>"Every little thing, is gonna be alright"</i></p><p>- Bob Marley</p></div>
-	<div class="column side2" style="background-color:#ccc;"><h3>Current Favorite Project:</h3><p>I am currently working on a text based adventure game, with a lot story in C#, it is certainly a passion project, I plan to one day implement the ideas in it into a playable game with visuals in the Unity Engine.</p></div>
-</div> 
-
-<!--- Welcome Section -->
-
-  
+	<div class="column"><h3>Favorite Quote:</h3><p><i>"Every little thing, is gonna be alright"</i></p><p>- Bob Marley</p></div>
+	<div class="column"><h3>Current Favorite Project:</h3><p>I am currently working on a text based adventure game, with a lot story in C#, it is certainly a passion project, I plan to one day implement the ideas in it into a playable game with visuals in the Unity Engine.</p></div>
+</div>
 
 
-<!--- Professional Info Section -->
 
 
 
